@@ -1,0 +1,26 @@
+/*权限类型MENU 菜单, ELEMENT 页面元素*/
+enum PermissionType {
+    MENU, ELEMENT
+}
+
+entity UserRole {
+	roleId Long required,
+    userId Long required
+}
+
+entity Permission {
+	name String,
+    url String,
+    type PermissionType,
+}
+
+entity RolePermission {
+	roleId Long,
+    permissionId Long,
+}
+
+relationship OneToMany {
+	Permission to Permission{parent},
+
+}
+

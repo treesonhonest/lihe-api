@@ -1,0 +1,25 @@
+{
+  "name": "RolePermission",
+  "fields": [
+    {
+      "fieldName": "roleId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "permissionId",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201013054141",
+  "entityTableName": "role_permission",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
