@@ -1,0 +1,44 @@
+{
+  "name": "Permission",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "PermissionType",
+      "fieldValues": "MENU,ELEMENT"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "permission",
+      "otherEntityRelationshipName": "parent",
+      "relationshipName": "permission"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "permission",
+      "otherEntityRelationshipName": "permission",
+      "relationshipName": "parent",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201013054041",
+  "entityTableName": "permission",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

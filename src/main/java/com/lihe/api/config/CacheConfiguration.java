@@ -47,6 +47,10 @@ public class CacheConfiguration {
             createCache(cm, com.lihe.api.domain.User.class.getName());
             createCache(cm, com.lihe.api.domain.Authority.class.getName());
             createCache(cm, com.lihe.api.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.lihe.api.domain.UserRole.class.getName());
+            createCache(cm, com.lihe.api.domain.Permission.class.getName());
+            createCache(cm, com.lihe.api.domain.Permission.class.getName() + ".permissions");
+            createCache(cm, com.lihe.api.domain.RolePermission.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
